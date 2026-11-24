@@ -1,0 +1,285 @@
+LAVISTECH FILE TOOLKIT
+END USER LICENSE AGREEMENT (EULA)
+Version 1.0 | Effective date: 24 November 2026
+
+Publisher / Project: Lavistech Solutions
+Product: Lavistech File Toolkit
+Website: https://lavistech.com/
+Source code: https://github.com/lavistechsolutions/LavistechFileToolkit/
+
+PLEASE READ THIS DOCUMENT
+
+This End User License Agreement ("Agreement") describes terms that apply
+to the official Lavistech File Toolkit installer, official binary distributions,
+and related publisher-provided services or materials.
+
+IMPORTANT OPEN-SOURCE NOTICE
+
+Lavistech File Toolkit is distributed as open-source software. The project's
+source code is licensed under the MIT License, available in the LICENSE
+file supplied with the project and at the source-code repository.
+
+This Agreement does not replace, narrow, or take away any rights granted
+under the MIT License or any applicable third-party open-source license.
+If a term in this Agreement conflicts with an applicable open-source
+license, that open-source license controls for the software and rights
+covered by it.
+
+1. DEFINITIONS
+
+1.1 "Application" means the Lavistech File Toolkit Windows application and the
+official installer or binary package supplied by the Publisher.
+
+1.2 "Publisher" means Lavistech Solutions, the project publisher. This
+designation does not represent that Lavistech Solutions is a registered
+company or separate legal entity.
+
+1.3 "You" means the individual or organization using, installing, or
+redistributing the Application.
+
+1.4 "Open-Source Licenses" means the MIT License governing the project's
+open-source code and the separate licenses governing any third-party
+components.
+
+1.5 "Third-Party Components" means libraries, binaries, or other software
+supplied by parties other than the Publisher.
+
+2. LICENSE AND PERMITTED USE
+
+2.1 The Application's original project code is made available under the
+MIT License, subject to the terms of that license.
+
+2.2 Subject to the applicable Open-Source Licenses, You may use the
+Application for personal, educational, business, and commercial purposes.
+
+2.3 The MIT License permits use, copying, modification, merging,
+publication, distribution, sublicensing, and sale of copies of the
+covered software, provided its conditions are met.
+
+2.4 You may obtain, inspect, modify, compile, and redistribute the
+publicly available source code in accordance with the MIT License and
+any applicable Third-Party Component licenses.
+
+2.5 This Agreement does not impose additional restrictions on activities
+that are expressly permitted by an applicable Open-Source License.
+
+3. INSTALLATION AND USE
+
+3.1 You are responsible for ensuring that Your computer meets the
+Application's published system requirements.
+
+3.2 You are responsible for maintaining appropriate backups before You
+rename files or run other operations that change names on disk.
+
+3.3 You may install or remove the Application using a supplied installer
+or other documented installation method.
+
+3.4 A framework-dependent build requires the .NET Desktop Runtime named
+in the project documentation. A self-contained build includes that runtime.
+
+4. WHAT THE TOOLS DO
+
+4.1 The Application provides local tools for bulk file rename, duplicate
+detection, file hashing, folder comparison, folder sync, file metadata,
+image resizing, image format conversion, JPEG and WebP compression,
+PDF merge, split, and rewrite, and ZIP and 7Z archives.
+
+4.2 These tools run on Your computer. The Application does not upload the
+files You select. You can drop files or folders onto an open tool.
+
+4.3 Bulk rename can change file names on disk after You choose Apply.
+A template may use {name}, {ext}, {n}, {date}, and {parent}. Preview
+does not change files. Apply checks for duplicate destination names and
+existing destination files before it starts. It is not a transaction:
+if a later move fails, earlier files in that run may already have been
+renamed. Undo restores the last apply when the original name is free.
+File contents are not modified.
+
+4.4 The duplicate finder reports groups of files that share a size and a
+SHA-256 hash. Files that cannot be read are skipped. If You confirm,
+extra copies are sent to the Recycle Bin. The oldest file in each group
+is kept. The finder does not permanently delete files.
+
+4.5 File hashes (MD5, SHA-1, SHA-256, SHA-512), folder comparison, and
+the metadata view are for inspection. A matching hash shows that the
+compared bytes match. It does not prove authorship.
+
+4.6 Folder sync copies missing, newer, or different-sized files from a
+source folder into a destination folder. If You choose the mode that
+removes extras, and You confirm, files that exist only in the destination
+are sent to the Recycle Bin. One folder must not sit inside the other.
+
+4.7 Image resize writes PNG copies into a folder You choose. Format
+conversion writes a separate file in the format You choose. JPEG and
+WebP compression write a new copy at the quality You choose and leave
+the original in place. JPEG conversion uses a quality setting of 92
+unless You set another quality in Image Compress. Animated images are
+handled from the first decoded frame.
+
+4.8 PDF tools merge files in the order You selected, split a PDF into
+single pages, or rewrite a PDF and compare the file size. Rewriting
+recompresses PDF streams. It does not downsample images inside the PDF.
+
+4.9 Archive tools create a ZIP or 7Z from selected files, and can list
+or extract ZIP, 7Z, RAR, TAR, and GZ. Extract refuses to write outside
+the output folder and refuses to overwrite a file that is already there.
+
+4.10 Keep backups before bulk rename, folder sync, or sending duplicate
+copies to the Recycle Bin.
+
+5. YOUR RESPONSIBILITIES
+
+You agree to:
+
+a. use the Application in compliance with applicable laws;
+b. respect copyright and other rights in files that You process;
+c. keep backups of files before renaming them, syncing a folder, or
+   sending copies to the Recycle Bin;
+d. avoid using the Application in a way that damages equipment or
+   interferes unlawfully with another person's systems or rights; and
+e. comply with the licenses and notices applicable to Third-Party
+   Components.
+
+6. THIRD-PARTY SOFTWARE AND SERVICES
+
+6.1 The Application may include or rely on Third-Party Components.
+Those components are not relicensed by this Agreement.
+
+6.2 Third-Party Components are governed by their own license terms.
+You must retain and comply with the applicable copyright notices,
+license texts, attribution notices, and redistribution conditions.
+
+6.3 This release includes PDFsharp, SharpCompress, and SkiaSharp, in
+addition to the .NET runtime, Windows Presentation Foundation, and
+Windows Forms supplied by Microsoft. Names, versions, and licenses are
+in THIRD-PARTY-NOTICES.txt distributed with the release.
+
+6.4 If a later release adds a third-party component, that component
+remains subject to its own license, which will be recorded in
+THIRD-PARTY-NOTICES.txt.
+
+7. INTELLECTUAL PROPERTY AND TRADEMARKS
+
+7.1 The Application's open-source code is licensed as stated in the
+LICENSE file. Copyright in contributions remains with their respective
+rights holders, subject to the applicable license.
+
+7.2 The MIT License does not grant trademark rights.
+
+7.3 The names "Lavistech File Toolkit", "LavistechFileToolkit", "LAVIS", the Publisher's
+logos, and associated branding may identify the official project and its
+source. Unless separately authorized, do not use those marks in a manner
+that falsely suggests that a modified product is an official release,
+is endorsed by the Publisher, or is supported by the Publisher.
+
+7.4 This section does not prevent truthful statements identifying the
+origin of the software, describing compatibility, or explaining that
+a distribution is modified or unofficial.
+
+8. PRIVACY AND DATA
+
+8.1 The tools in this release process files on the local computer and do
+not send those files to the Publisher.
+
+8.2 Unhandled errors may be written to a log file under
+%AppData%\LavistechFileToolkit\error.log on Your computer. That file stays on
+the machine. Review it before You share it, because an exception message
+can include a file path.
+
+8.3 If the Publisher introduces a feature that collects or processes
+personal data, the Publisher should provide appropriate privacy
+information and choices as required by applicable law.
+
+8.4 Third-party services or components may process data under their
+own privacy policies and terms.
+
+9. UPDATES AND SUPPORT
+
+9.1 The Publisher may make updates, fixes, or new versions available
+through the project repository or other official distribution channels.
+
+9.2 The Publisher is not obligated to provide technical support,
+maintenance, updates, or continued availability of downloads.
+
+9.3 You may continue to exercise the open-source rights granted by the
+applicable Open-Source Licenses even if official builds, support, or
+downloads are discontinued.
+
+10. DISCLAIMER OF WARRANTY
+
+THE APPLICATION AND ANY OFFICIAL INSTALLER OR BINARY DISTRIBUTION ARE
+PROVIDED "AS IS" AND, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, WHETHER EXPRESS, IMPLIED,
+OR STATUTORY, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+THE PUBLISHER DOES NOT WARRANT THAT THE APPLICATION WILL BE ERROR-FREE,
+UNINTERRUPTED, SECURE, AVAILABLE, COMPATIBLE WITH EVERY DEVICE OR
+CONFIGURATION, OR THAT DEFECTS WILL BE CORRECTED.
+
+This section does not override or remove any warranty or consumer right
+that cannot lawfully be excluded or limited. The terms of each Third-Party
+Component's license remain applicable to that component.
+
+11. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PUBLISHER AND
+PROJECT CONTRIBUTORS SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL LOSS OR DAMAGE, OR FOR LOSS OF
+DATA, PROFITS, REVENUE, GOODWILL, BUSINESS, OR USE, ARISING OUT OF OR
+IN CONNECTION WITH THE APPLICATION OR THIS AGREEMENT, WHETHER IN
+CONTRACT, TORT, OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH LOSS OR DAMAGE.
+
+Nothing in this Agreement excludes or limits liability to the extent
+that such exclusion or limitation is prohibited by applicable law,
+including liability that cannot legally be excluded.
+
+12. TERMINATION
+
+12.1 You may stop using the Application at any time and uninstall it.
+
+12.2 This Agreement does not revoke or narrow rights already granted
+to You under the MIT License or any applicable Third-Party Component
+license.
+
+12.3 If You breach a term that lawfully applies to Your use of a
+Publisher-provided service or trademark, the Publisher may pursue
+remedies available under applicable law. No such remedy will remove
+rights that an applicable open-source license grants independently.
+
+13. CHANGES TO THIS AGREEMENT
+
+13.1 The Publisher may update this Agreement for future releases.
+
+13.2 The Agreement supplied with a particular release should be retained
+with that release. A later version of this Agreement does not retroactively
+remove rights already granted under an applicable Open-Source License.
+
+13.3 The current project license and third-party notices are available
+from the project's source-code repository.
+
+14. GOVERNING LAW AND MANDATORY RIGHTS
+
+14.1 The Publisher has not selected a governing law or a court for this
+Agreement. This section does not choose one. Mandatory consumer protection
+rules and other laws that apply to You still apply. Nothing in this
+Agreement is intended to deprive You of mandatory rights under applicable
+law, including rights that cannot legally be limited.
+
+14.2 A later version of this Agreement may name a jurisdiction and a venue
+after legal review. That version applies to an Application build that is
+published with it.
+
+15. CONTACT
+
+Project: Lavistech File Toolkit
+Publisher / project name: Lavistech Solutions
+Website: https://lavistech.com/
+Source code: https://github.com/lavistechsolutions/LavistechFileToolkit/
+Support / licensing contact: info@lavistech.com
+
+For bug reports and feature requests, use the issue tracker in the
+official project repository.
+
+END OF AGREEMENT

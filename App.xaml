@@ -1,0 +1,31 @@
+<Application x:Class="LavistechFileToolkit.App"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" StartupUri="MainWindow.xaml">
+ <Application.Resources>
+  <SolidColorBrush x:Key="Accent" Color="#3985F5"/>
+  <SolidColorBrush x:Key="Sidebar" Color="#1B2838"/>
+  <SolidColorBrush x:Key="Panel" Color="#243244"/>
+  <SolidColorBrush x:Key="Muted" Color="#9AAABD"/>
+  <Style x:Key="AboutLink" TargetType="TextBlock">
+   <Setter Property="Foreground" Value="White"/>
+   <Setter Property="HorizontalAlignment" Value="Center"/>
+   <Setter Property="VerticalAlignment" Value="Center"/>
+   <Setter Property="Cursor" Value="Hand"/>
+  </Style>
+  <Style TargetType="Button">
+   <Setter Property="Padding" Value="13,8"/><Setter Property="Margin" Value="0,0,8,0"/>
+   <Setter Property="BorderThickness" Value="0"/><Setter Property="Cursor" Value="Hand"/>
+   <Setter Property="FontSize" Value="13"/>
+  </Style>
+  <Style TargetType="TextBox">
+   <Setter Property="Padding" Value="9"/><Setter Property="FontSize" Value="13"/>
+   <Setter Property="Background" Value="#192635"/><Setter Property="Foreground" Value="#E8EEF7"/>
+   <Setter Property="BorderBrush" Value="#405168"/><Setter Property="CaretBrush" Value="White"/>
+   <Setter Property="BorderThickness" Value="1"/>
+  </Style>
+  <Style TargetType="ComboBox">
+   <Setter Property="Padding" Value="7"/><Setter Property="Background" Value="#26364A"/>
+   <Setter Property="Foreground" Value="#172334"/><Setter Property="MinWidth" Value="160"/>
+  </Style>
+ </Application.Resources>
+</Application>

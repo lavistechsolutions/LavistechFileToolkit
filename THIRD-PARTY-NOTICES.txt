@@ -1,0 +1,35 @@
+LAVISTECH FILE TOOLKIT
+THIRD-PARTY NOTICES AND LICENSES
+================================
+
+This file records third-party components distributed with Lavistech File Toolkit.
+Include it with source and binary distributions.
+
+The application is built with the .NET SDK, Windows Presentation Foundation,
+and Windows Forms (used for the folder browser). Those platform components
+are supplied by Microsoft with the .NET runtime, or included when you
+publish a self-contained build. They remain under Microsoft's license for
+that runtime:
+
+https://dotnet.microsoft.com/dotnet_library_license.htm
+
+PNG, JPG, BMP, GIF, and TIFF encoding uses the built-in WPF imaging codecs.
+
+The following libraries are distributed with the application:
+
+PDFsharp 6.2.1
+License: MIT
+Source: https://github.com/empira/PDFsharp
+Used for: merging, splitting, and rewriting PDF files.
+
+SharpCompress 0.50.11
+License: MIT
+Source: https://github.com/adamhathcock/sharpcompress
+Used for: creating ZIP and 7Z archives, and reading ZIP, 7Z, RAR, TAR, and GZ.
+
+SkiaSharp 3.119.0
+License: MIT. The native Skia library is under the BSD 3-Clause License.
+Source: https://github.com/mono/SkiaSharp
+Used for: JPEG and WebP compression.
+
+Each library keeps its own license. Those texts ship inside the NuGet packages.
